@@ -1,7 +1,48 @@
-# resume-website
+# Static Web Server
+
 このプロジェクトでは、本番環境に対応したウェブサーバを自分で作成し、バックエンド開発に必要なデプロイプロセスを行いました。AWS EC2インスタンスを通じて自身のウェブサーバを設定する際に、ウェブサーバの基本的な知識をすべて学びました。自分自身の本番用のLinuxサーバを作成し、NGINXウェブサーバを設定し、自分のドメインとサブドメインを作成し、SSHとTSLを使用した安全な接続を設定しました。
 
-https://resume-website.kyotaprojects.xyz/
-このリンクで、作ったサーバからデプロイしたウェブサイトを参照できます。
+## ウェブサイトの参照
 
-For this project, I created my own production-ready web server and went through the deployment process required for back-end development; I learned all the web server basics as I set up my own web server through an AWS EC2 instance. Created my own production Linux server, set up my own NGINX web server, created my own domain and subdomains, and set up secure connections using SSH and TSL.
+このプロジェクトでデプロイしたウェブサイトは、以下のリンクから参照できます。
+
+[https://resume-website.kyotaprojects.xyz/](https://resume-website.kyotaprojects.xyz/)
+
+## インストールとセットアップ
+
+以下は、プロジェクトのセットアップ手順です。
+
+1. **AWS EC2インスタンスの作成**
+    - EC2ダッシュボードから新しいインスタンスを作成します。
+    - インスタンスにはUbuntuを選択し、必要な設定を行います。
+
+2. **NGINXウェブサーバの設定**
+    - SSHを使用してEC2インスタンスに接続します。
+    - NGINXをインストールし、基本的な設定を行います。
+
+3. **ドメインとサブドメインの設定**
+    - ドメインとサブドメインを作成し、DNSの設定を行います。
+
+4. **セキュアな接続の設定**
+    - SSHとTSLを使用して安全な接続を確立します。
+
+## 使い方
+
+プロジェクトのセットアップが完了したら、以下の手順でウェブサーバにアクセスできます。
+
+1. ブラウザを開き、ドメインまたはサブドメインのURLにアクセスします。
+2. ウェブサーバが正常に設定されていれば、ウェブページが表示されます。
+
+## 学んだこと
+
+このプロジェクトを通じて以下のスキルと知識を獲得しました。
+
+- AWS EC2を使用した仮想マシンの作成と管理
+- NGINXウェブサーバの基本的な設定
+- ドメインとサブドメインの設定とDNSの理解
+- SSHとTSLを使用した安全な接続の確立
+
+## 注意事項
+
+プロジェクトを実行する際には、AWSやその他のサービスの利用料金に注意してください。適切なセキュリティ対策を講じないと、プロジェクトが脆弱な状態になる可能性があります。
+
